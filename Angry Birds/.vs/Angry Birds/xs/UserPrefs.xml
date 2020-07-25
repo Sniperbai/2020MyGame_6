@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{6BE77C5F-732E-21CF-FE0F-871BCE23A44E}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Pig.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Pig.cs" Line="21" Column="67" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Angry Birds" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Pig.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8fc74294-0da5-4874-9f16-2cc624a5ca95" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
