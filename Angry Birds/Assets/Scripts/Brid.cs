@@ -5,10 +5,15 @@ using UnityEngine;
 public class Brid : MonoBehaviour
 {
     private bool isclick = false ;
-    public Transform rightPos;
+    
     public float maxDis = 3;
     private SpringJoint2D sp;
     private Rigidbody2D rg;
+
+    public  LineRenderer right;
+    public Transform rightPos;
+    public  LineRenderer left;
+    public Transform leftPos;
 
     private void Awake()
     {
@@ -42,11 +47,23 @@ public class Brid : MonoBehaviour
                 pos *= maxDis;//最大长度的向量
                 transform.position = pos + rightPos.position;
             }
+
+            Line();
         }
     }
 
     void Fly() 
     {
         sp.enabled = false;
+    }
+
+    //划线
+    void Line()
+    {
+        right.SetPosition(0, rightPos.position);
+        right.SetPosition(1,transform.position);
+
+        left.SetPosition(0,leftPos.position);
+        left.SetPosition(1,transform.position);
     }
 }
