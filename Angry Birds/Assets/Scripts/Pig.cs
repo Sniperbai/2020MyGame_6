@@ -13,6 +13,7 @@ public class Pig : MonoBehaviour
     public GameObject boom;
     public GameObject score;
 
+    public bool isPig = false;
 
     private void Awake()
     {
@@ -34,6 +35,10 @@ public class Pig : MonoBehaviour
 
     void Dead() 
     {
+        if (isPig)
+        {
+            GameManager._instance.pig.Remove(this);
+        }
         Destroy(gameObject);
         Instantiate(boom, transform.position, Quaternion.identity);
 

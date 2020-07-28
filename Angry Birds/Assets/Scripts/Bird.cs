@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Brid : MonoBehaviour
+public class Bird : MonoBehaviour
 {
     private bool isclick = false ;
     
     public float maxDis = 3;
-    private SpringJoint2D sp;
-    private Rigidbody2D rg;
+    [HideInInspector]
+    public SpringJoint2D sp;
+    public Rigidbody2D rg;
 
     public  LineRenderer right;
     public Transform rightPos;
     public  LineRenderer left;
     public Transform leftPos;
+
+    public GameObject boom;
 
     private void Awake()
     {
@@ -65,5 +68,13 @@ public class Brid : MonoBehaviour
 
         left.SetPosition(0,leftPos.position);
         left.SetPosition(1,transform.position);
+    }
+
+    void Next()
+    {
+        GameManager._instance.birds.Remove(this);
+        Destroy(gameObject);
+        Instantiate(boom, transform.position, Quaternion.identity);
+        GameManager._instance.NextBird();
     }
 }
