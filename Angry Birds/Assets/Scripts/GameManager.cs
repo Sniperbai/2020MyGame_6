@@ -9,9 +9,16 @@ public class GameManager : MonoBehaviour
 
     public static GameManager _instance;
 
+    private Vector3 originPos;  //初始化位置
+
     private void Awake()
     {
         _instance = this;
+        if (birds.Count > 0)
+        {
+            originPos = birds[0].transform.position;
+        }
+        
     }
 
     private void Start()
@@ -27,6 +34,7 @@ public class GameManager : MonoBehaviour
         {
             if (i == 0) //第一只小鸟
             {
+                birds[i].transform.position = originPos;
                 birds[i].enabled = true;
                 birds[i].sp.enabled = true;
             }

@@ -35,6 +35,10 @@ public class Bird : MonoBehaviour
         isclick = false;
         rg.isKinematic = false;
         Invoke("Fly", 0.1f);
+
+        //禁用划线组件
+        right.enabled = false;
+        left.enabled = false;
     }
 
     private void Update()
@@ -58,11 +62,15 @@ public class Bird : MonoBehaviour
     void Fly() 
     {
         sp.enabled = false;
+        Invoke("Next",5);
     }
 
     //划线
     void Line()
     {
+        right.enabled = true;
+        left.enabled = true;
+
         right.SetPosition(0, rightPos.position);
         right.SetPosition(1,transform.position);
 
@@ -70,6 +78,7 @@ public class Bird : MonoBehaviour
         left.SetPosition(1,transform.position);
     }
 
+    //下一只小鸟的飞出
     void Next()
     {
         GameManager._instance.birds.Remove(this);
