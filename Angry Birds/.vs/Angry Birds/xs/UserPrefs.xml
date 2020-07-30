@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
       <File FileName="Assets/Scripts/GameManager.cs" Line="63" Column="13" />
-      <File FileName="Assets/Scripts/Bird.cs" Line="88" Column="6" />
+      <File FileName="Assets/Scripts/Bird.cs" />
       <File FileName="Assets/Scripts/Pig.cs" />
     </Files>
     <Pads>
@@ -13,6 +13,7 @@
               <Node name="Scripts" expanded="True">
                 <Node name="GameManager.cs" selected="True" />
               </Node>
+              <Node name="Trails FX" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -21,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5e8db1fd-7a30-40f9-9e5a-b2601ccc3182" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a1d8dd26-c77b-43fd-a5fe-c5fb4471ac65" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
