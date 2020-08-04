@@ -980,7 +980,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1349848179
-  m_SortingLayer: 0
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2622017789991001781, guid: f0d33406e522c4498aae5183e2ce7c23,
     type: 3}
@@ -1915,7 +1915,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1349848179
-  m_SortingLayer: 0
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -7217269170417484719, guid: f0d33406e522c4498aae5183e2ce7c23,
     type: 3}
@@ -2279,7 +2279,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1349848179
-  m_SortingLayer: 0
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 4673891201235324854, guid: f0d33406e522c4498aae5183e2ce7c23,
     type: 3}
@@ -2851,7 +2851,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1151222360}
   - component: {fileID: 1151222359}
-  - component: {fileID: 1151222358}
   m_Layer: 0
   m_Name: UICamera
   m_TagString: Untagged
@@ -2859,14 +2858,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1151222358
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151222357}
-  m_Enabled: 1
 --- !u!20 &1151222359
 Camera:
   m_ObjectHideFlags: 0
@@ -3365,7 +3356,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1349848179
-  m_SortingLayer: 0
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 4673891201235324854, guid: f0d33406e522c4498aae5183e2ce7c23,
     type: 3}
@@ -3728,7 +3719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1507119011
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4368,7 +4359,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1803006328
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4495,6 +4486,10 @@ MonoBehaviour:
   - {fileID: 373345011}
   win: {fileID: 191627815}
   lose: {fileID: 297404023}
+  stars:
+  - {fileID: 1803006327}
+  - {fileID: 1507119010}
+  - {fileID: 1979672417}
 --- !u!4 &1848412087
 Transform:
   m_ObjectHideFlags: 0
@@ -4668,7 +4663,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1349848179
-  m_SortingLayer: 0
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 4673891201235324854, guid: f0d33406e522c4498aae5183e2ce7c23,
     type: 3}
@@ -4975,7 +4970,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1349848179
-  m_SortingLayer: 0
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 2367025144052387987, guid: f0d33406e522c4498aae5183e2ce7c23,
     type: 3}
@@ -5309,7 +5304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1979672418
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5714,7 +5709,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1349848179
-  m_SortingLayer: 0
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2622017789991001781, guid: f0d33406e522c4498aae5183e2ce7c23,
     type: 3}
