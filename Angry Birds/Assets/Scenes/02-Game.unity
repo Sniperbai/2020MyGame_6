@@ -4483,7 +4483,6 @@ MonoBehaviour:
   - {fileID: 1262661849}
   pig:
   - {fileID: 2141814572}
-  - {fileID: 373345011}
   win: {fileID: 191627815}
   lose: {fileID: 297404023}
   stars:
