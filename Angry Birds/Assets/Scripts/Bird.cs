@@ -18,6 +18,8 @@ public class Bird : MonoBehaviour
 
     public GameObject boom;
 
+    private bool canMove = true;
+
     private void Awake()
     {
         sp = GetComponent<SpringJoint2D>();
@@ -26,19 +28,27 @@ public class Bird : MonoBehaviour
 
     private void OnMouseDown()
     {
-        isclick = true;
-        rg.isKinematic = true;
+        if (canMove) 
+        {
+            isclick = true;
+            rg.isKinematic = true;
+        }
+        
     }
 
     private void OnMouseUp()
     {
-        isclick = false;
-        rg.isKinematic = false;
-        Invoke("Fly", 0.1f);
+        if (canMove) 
+        {
+            isclick = false;
+            rg.isKinematic = false;
+            Invoke("Fly", 0.1f);
 
-        //禁用划线组件
-        right.enabled = false;
-        left.enabled = false;
+            //禁用划线组件
+            right.enabled = false;
+            left.enabled = false;
+            canMove = false;
+        }
     }
 
     private void Update()
