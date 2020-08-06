@@ -2696,6 +2696,7 @@ MonoBehaviour:
   left: {fileID: 1927952547}
   leftPos: {fileID: 187648789}
   boom: {fileID: 407837994042461936, guid: 9ae730c6a821d514681d26feff784d85, type: 3}
+  smooth: 3
 --- !u!58 &937407979
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2918,7 +2919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1004015408
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3892,6 +3893,7 @@ MonoBehaviour:
   left: {fileID: 1927952547}
   leftPos: {fileID: 187648789}
   boom: {fileID: 407837994042461936, guid: 9ae730c6a821d514681d26feff784d85, type: 3}
+  smooth: 3
 --- !u!58 &1262661850
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5064,7 +5066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1809207019
 RectTransform:
   m_ObjectHideFlags: 0
