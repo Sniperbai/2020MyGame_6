@@ -18,6 +18,13 @@ public class Bird : MonoBehaviour
 
     public GameObject boom;
 
+    private bool canMove = true;
+    public float smooth = 3;
+
+    public AudioClip select;
+    public AudioClip fly;
+
+
     private void Awake()
     {
         sp = GetComponent<SpringJoint2D>();
@@ -26,19 +33,28 @@ public class Bird : MonoBehaviour
 
     private void OnMouseDown()
     {
-        isclick = true;
-        rg.isKinematic = true;
+        if (canMove) 
+        {
+            AudioPlay(select);
+            isclick = true;
+            rg.isKinematic = true;
+        }
+        
     }
 
     private void OnMouseUp()
     {
-        isclick = false;
-        rg.isKinematic = false;
-        Invoke("Fly", 0.1f);
+        if (canMove) 
+        {
+            isclick = false;
+            rg.isKinematic = false;
+            Invoke("Fly", 0.1f);
 
-        //禁用划线组件
-        right.enabled = false;
-        left.enabled = false;
+            //禁用划线组件
+            right.enabled = false;
+            left.enabled = false;
+            canMove = false;
+        }
     }
 
     private void Update()
@@ -57,10 +73,16 @@ public class Bird : MonoBehaviour
 
             Line();
         }
+
+        //相机跟随
+        float posX = transform.position.x;
+        Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, new Vector3(Mathf.Clamp(posX, 0, 15), Camera.main.transform.position.y, Camera.main.transform.position.z),smooth*Time.deltaTime);
+
     }
 
     void Fly() 
     {
+        AudioPlay(fly);
         sp.enabled = false;
         Invoke("Next",5);
     }
@@ -85,5 +107,11 @@ public class Bird : MonoBehaviour
         Destroy(gameObject);
         Instantiate(boom, transform.position, Quaternion.identity);
         GameManager._instance.NextBird();
+    }
+
+    public void AudioPlay(AudioClip clip ) 
+    {
+        AudioSource.PlayClipAtPoint(clip,transform.position );
+    
     }
 }
