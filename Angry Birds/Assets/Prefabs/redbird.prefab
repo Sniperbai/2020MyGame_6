@@ -164,6 +164,9 @@ MonoBehaviour:
   left: {fileID: 0}
   leftPos: {fileID: 0}
   boom: {fileID: 407837994042461936, guid: 9ae730c6a821d514681d26feff784d85, type: 3}
+  smooth: 3
+  select: {fileID: 8300000, guid: 3641c9435ad52ea429348437c2742cdb, type: 3}
+  fly: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
 --- !u!114 &8184113718816424256
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -21,6 +21,9 @@ public class Bird : MonoBehaviour
     private bool canMove = true;
     public float smooth = 3;
 
+    public AudioClip select;
+    public AudioClip fly;
+
 
     private void Awake()
     {
@@ -32,6 +35,7 @@ public class Bird : MonoBehaviour
     {
         if (canMove) 
         {
+            AudioPlay(select);
             isclick = true;
             rg.isKinematic = true;
         }
@@ -78,6 +82,7 @@ public class Bird : MonoBehaviour
 
     void Fly() 
     {
+        AudioPlay(fly);
         sp.enabled = false;
         Invoke("Next",5);
     }
@@ -102,5 +107,11 @@ public class Bird : MonoBehaviour
         Destroy(gameObject);
         Instantiate(boom, transform.position, Quaternion.identity);
         GameManager._instance.NextBird();
+    }
+
+    public void AudioPlay(AudioClip clip ) 
+    {
+        AudioSource.PlayClipAtPoint(clip,transform.position );
+    
     }
 }
