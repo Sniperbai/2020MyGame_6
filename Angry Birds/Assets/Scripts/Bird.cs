@@ -9,7 +9,7 @@ public class Bird : MonoBehaviour
     public float maxDis = 3;
     [HideInInspector]
     public SpringJoint2D sp;
-    public Rigidbody2D rg;
+    protected Rigidbody2D rg;
 
     public  LineRenderer right;
     public Transform rightPos;
@@ -18,11 +18,15 @@ public class Bird : MonoBehaviour
 
     public GameObject boom;
 
+    //private TestMyTrail myTrail;
+
     private bool canMove = true;
     public float smooth = 3;
 
     public AudioClip select;
     public AudioClip fly;
+
+    public bool isFly = false;
 
 
     private void Awake()
@@ -78,10 +82,19 @@ public class Bird : MonoBehaviour
         float posX = transform.position.x;
         Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, new Vector3(Mathf.Clamp(posX, 0, 15), Camera.main.transform.position.y, Camera.main.transform.position.z),smooth*Time.deltaTime);
 
+        if (isFly) 
+        {
+            if (Input.GetMouseButtonDown(0)) 
+            {
+                ShowSkill();
+            
+            }
+        }
     }
 
     void Fly() 
     {
+        isFly = true;
         AudioPlay(fly);
         sp.enabled = false;
         Invoke("Next",5);
@@ -109,9 +122,21 @@ public class Bird : MonoBehaviour
         GameManager._instance.NextBird();
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        isFly = false;
+        //myTrail.ClearTrails();
+    }
+
     public void AudioPlay(AudioClip clip ) 
     {
         AudioSource.PlayClipAtPoint(clip,transform.position );
     
+    }
+
+    //炫技的操作
+    public virtual void ShowSkill()
+    {
+        isFly = false;
     }
 }

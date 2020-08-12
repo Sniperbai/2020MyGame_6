@@ -1234,7 +1234,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1349848179
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2622017789991001781, guid: f0d33406e522c4498aae5183e2ce7c23,
     type: 3}
@@ -2585,7 +2585,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1349848179
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -7217269170417484719, guid: f0d33406e522c4498aae5183e2ce7c23,
     type: 3}
@@ -2901,10 +2901,10 @@ GameObject:
   - component: {fileID: 937407982}
   - component: {fileID: 937407981}
   - component: {fileID: 937407980}
-  - component: {fileID: 937407979}
   - component: {fileID: 937407978}
+  - component: {fileID: 937407979}
   m_Layer: 0
-  m_Name: bird (1)
+  m_Name: yellowbird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2917,14 +2917,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937407977}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c37ecee031e96e47b39c9e7ac10a851, type: 3}
+  m_Script: {fileID: 11500000, guid: 88133841f7d63f24caa2b40485df8f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDis: 3
+  maxDis: 1.5
   sp: {fileID: 0}
-  rg: {fileID: 937407981}
   right: {fileID: 806387545}
   rightPos: {fileID: 1837843615}
   left: {fileID: 1927952547}
@@ -2933,6 +2932,7 @@ MonoBehaviour:
   smooth: 3
   select: {fileID: 8300000, guid: 3641c9435ad52ea429348437c2742cdb, type: 3}
   fly: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
+  isFly: 0
 --- !u!58 &937407979
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2946,9 +2946,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0143239945, y: -0.028647989}
+  m_Offset: {x: 0.01432398, y: -0.076687306}
   serializedVersion: 2
-  m_Radius: 0.19056885
+  m_Radius: 0.23860815
 --- !u!231 &937407980
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -3027,9 +3027,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1349848179
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 4673891201235324854, guid: f0d33406e522c4498aae5183e2ce7c23,
+  m_Sprite: {fileID: 6761594955697898156, guid: f0d33406e522c4498aae5183e2ce7c23,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4134,7 +4134,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDis: 3
   sp: {fileID: 0}
-  rg: {fileID: 1262661852}
   right: {fileID: 806387545}
   rightPos: {fileID: 1837843615}
   left: {fileID: 1927952547}
@@ -4143,6 +4142,7 @@ MonoBehaviour:
   smooth: 3
   select: {fileID: 8300000, guid: 3641c9435ad52ea429348437c2742cdb, type: 3}
   fly: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
+  isFly: 0
 --- !u!58 &1262661850
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4237,7 +4237,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1349848179
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 4673891201235324854, guid: f0d33406e522c4498aae5183e2ce7c23,
     type: 3}
@@ -5621,7 +5621,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1349848179
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 2367025144052387987, guid: f0d33406e522c4498aae5183e2ce7c23,
     type: 3}
