@@ -158,7 +158,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDis: 3
   sp: {fileID: 0}
-  rg: {fileID: 8184113718816424317}
   right: {fileID: 0}
   rightPos: {fileID: 0}
   left: {fileID: 0}
@@ -167,6 +166,8 @@ MonoBehaviour:
   smooth: 3
   select: {fileID: 8300000, guid: 3641c9435ad52ea429348437c2742cdb, type: 3}
   fly: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
+  isFly: 0
+  hurt: {fileID: 8669725828687014486, guid: f0d33406e522c4498aae5183e2ce7c23, type: 3}
 --- !u!114 &8184113718816424256
 MonoBehaviour:
   m_ObjectHideFlags: 0
