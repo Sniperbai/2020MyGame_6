@@ -31,9 +31,24 @@ public class BlackBird : Bird
             for (int i = 0; i < blocks.Count; i++) 
             {
                 blocks[i].Dead();
-            
             }
-        
         }
+        OnClear();
+    }
+
+    void OnClear() 
+    {
+        rg.velocity = Vector3.zero;
+        Instantiate(boom, transform.position, Quaternion.identity);
+        render.enabled = false;
+        GetComponent<CircleCollider2D>().enabled = false;
+        //myTrail.ClearTrails();
+    }
+
+    protected override void Next()
+    {
+        GameManager._instance.birds.Remove(this);
+        Destroy(gameObject);
+        GameManager._instance.NextBird();
     }
 }
