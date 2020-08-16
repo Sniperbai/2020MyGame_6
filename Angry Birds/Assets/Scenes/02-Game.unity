@@ -5122,8 +5122,9 @@ MonoBehaviour:
   - {fileID: 7986915430005173341}
   - {fileID: 1900732254}
   - {fileID: 937407978}
+  - {fileID: 4691055894156636519}
   pig:
-  - {fileID: 2141814572}
+  - {fileID: 0}
   win: {fileID: 191627815}
   lose: {fileID: 297404023}
   stars:
@@ -5956,18 +5957,6 @@ Transform:
   m_Father: {fileID: 309194317}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2141814572 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3788659411127000550, guid: c75f10f79c1955042902fd2fb79d745f,
-    type: 3}
-  m_PrefabInstance: {fileID: 3788659410881159882}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 075906f4ab34a4685b27ae6f262776bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1466381646895039371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6104,30 +6093,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3788659411127000550, guid: c75f10f79c1955042902fd2fb79d745f,
-        type: 3}
-      propertyPath: hurtClip
-      value: 
-      objectReference: {fileID: 8300000, guid: c1a5f2757fb06fd45812883f28dbf66b, type: 3}
-    - target: {fileID: 3788659411127000550, guid: c75f10f79c1955042902fd2fb79d745f,
-        type: 3}
-      propertyPath: dead
-      value: 
-      objectReference: {fileID: 8300000, guid: 10ea50ad52f85f04d99128c58ee3b632, type: 3}
-    - target: {fileID: 3788659411127000550, guid: c75f10f79c1955042902fd2fb79d745f,
-        type: 3}
-      propertyPath: birdCollision
-      value: 
-      objectReference: {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}
     - target: {fileID: 3788659411127000557, guid: c75f10f79c1955042902fd2fb79d745f,
         type: 3}
       propertyPath: m_Name
       value: pig
-      objectReference: {fileID: 0}
-    - target: {fileID: 3788659411127000557, guid: c75f10f79c1955042902fd2fb79d745f,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c75f10f79c1955042902fd2fb79d745f, type: 3}
@@ -6225,6 +6194,18 @@ PrefabInstance:
       objectReference: {fileID: 187648789}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c923f1260eb39941bea40a95e176bb7, type: 3}
+--- !u!114 &4691055894156636519 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4691055893271790015, guid: 4c923f1260eb39941bea40a95e176bb7,
+    type: 3}
+  m_PrefabInstance: {fileID: 4691055894156636518}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7f50fcc5bd7d3499d89a3b5b43847a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6398263812937191507
 PrefabInstance:
   m_ObjectHideFlags: 0
