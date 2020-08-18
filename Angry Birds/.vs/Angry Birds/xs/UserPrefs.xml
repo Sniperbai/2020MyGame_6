@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{6BE77C5F-732E-21CF-FE0F-871BCE23A44E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PausePanel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MapSelect.cs">
     <Files>
       <File FileName="Assets/Scripts/GameManager.cs" Line="102" Column="1" />
       <File FileName="Assets/Scripts/Bird.cs" />
       <File FileName="Assets/Scripts/Pig.cs" />
       <File FileName="Assets/Scripts/PausePanel.cs" Line="13" Column="41" />
+      <File FileName="Assets/Scripts/MapSelect.cs" Line="8" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +13,7 @@
           <Node name="Angry Birds" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="PausePanel.cs" selected="True" />
+                <Node name="MapSelect.cs" selected="True" />
               </Node>
               <Node name="Trails FX" expanded="True" />
             </Node>
@@ -23,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c73a5ea7-7301-4f95-83df-9a5321151a7f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="04305b6e-b8f5-4b2b-bc0b-cc75ec744a43" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
