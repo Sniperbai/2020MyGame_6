@@ -24,6 +24,8 @@ public class MapSelect : MonoBehaviour
         {
             locks.SetActive(false);
             stars.SetActive(true);
+
+            //TODO text显示
         }
     }
 

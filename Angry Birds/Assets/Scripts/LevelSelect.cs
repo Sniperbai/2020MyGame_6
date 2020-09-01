@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LevelSelect : MonoBehaviour
 {
@@ -25,6 +26,15 @@ public class LevelSelect : MonoBehaviour
         {
             image.overrideSprite = levelBG;
             transform.Find("num").gameObject.SetActive(true);
+        }
+    }
+
+    public void Selected()
+    {
+        if (isSelect)
+        {
+            PlayerPrefs.SetString("nowLevel", "level" + gameObject.name);
+            SceneManager.LoadScene(2);
         }
     }
 }
