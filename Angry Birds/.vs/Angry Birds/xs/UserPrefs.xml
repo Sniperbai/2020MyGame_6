@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{6BE77C5F-732E-21CF-FE0F-871BCE23A44E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Loadlevel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LevelSelect.cs">
     <Files>
       <File FileName="../../../Unity Project/mobkongfu/Assets/0000_idle_mage/Scripts/UpGrade/UI/ShowOrHideSceneBtn.cs" Line="43" Column="1" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="94" Column="45" />
+      <File FileName="Assets/Scripts/GameManager.cs" />
       <File FileName="Assets/Scripts/Bird.cs" />
       <File FileName="Assets/Scripts/Pig.cs" />
       <File FileName="Assets/Scripts/PausePanel.cs" />
-      <File FileName="Assets/Scripts/MapSelect.cs" Line="33" Column="6" />
-      <File FileName="Assets/Scripts/LevelSelect.cs" Line="25" Column="23" />
+      <File FileName="Assets/Scripts/MapSelect.cs" />
+      <File FileName="Assets/Scripts/LevelSelect.cs" Line="36" Column="48" />
       <File FileName="Assets/Scripts/Loadlevel.cs" Line="9" Column="29" />
     </Files>
     <Pads>
@@ -16,7 +16,7 @@
           <Node name="Angry Birds" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Loadlevel.cs" selected="True" />
+                <Node name="LevelSelect.cs" selected="True" />
               </Node>
               <Node name="Trails FX" expanded="True" />
             </Node>

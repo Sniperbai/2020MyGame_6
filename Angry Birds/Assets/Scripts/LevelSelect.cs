@@ -10,6 +10,8 @@ public class LevelSelect : MonoBehaviour
     public Sprite levelBG;
     private Image image;
 
+    public GameObject[] stars;
+
     private void Awake()
     {
         image = GetComponent<Image>();
@@ -26,6 +28,16 @@ public class LevelSelect : MonoBehaviour
         {
             image.overrideSprite = levelBG;
             transform.Find("num").gameObject.SetActive(true);
+
+            //获取现在关卡对应的名字，然后获得对应的星星个数
+            int count = PlayerPrefs.GetInt("level"+gameObject.name);
+            if (count > 0)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    stars[i].SetActive(true);
+                }
+            }
         }
     }
 
