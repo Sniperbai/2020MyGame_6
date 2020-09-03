@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
 
     private int starsNum = 0;
 
+    private int totalNum = 10;
+
     private void Awake()
     {
         _instance = this;
@@ -110,6 +112,17 @@ public class GameManager : MonoBehaviour
 
     public void SaveDate()
     {
-        PlayerPrefs.SetInt(PlayerPrefs.GetString("nowLevel"),starsNum);
+        if(starsNum > PlayerPrefs.GetInt(PlayerPrefs.GetString("nowLevel")))
+        {
+            PlayerPrefs.SetInt(PlayerPrefs.GetString("nowLevel"), starsNum);
+        }
+        //存储所有的星星个数
+        int sum = 0;
+        for (int i = 1; i <= totalNum; i++)
+        {
+            sum += PlayerPrefs.GetInt(PlayerPrefs.GetString("level" + i.ToString()));
+        }
+        PlayerPrefs.SetInt("totalNum",sum);
+        
     }
 }
