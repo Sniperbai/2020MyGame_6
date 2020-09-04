@@ -16,12 +16,21 @@ public class LevelSelect : MonoBehaviour
     {
         image = GetComponent<Image>();
     }
-
+    
     private void Start()
     {
-        if (transform.parent.GetChild(0).name == gameObject.name) 
+        if (transform.parent.GetChild(0).name == gameObject.name)
         {
             isSelect = true;
+        }
+        else
+        {
+            //判断当前关卡是否可以选择
+            int beforeNum = int.Parse(gameObject.name)-1;
+            if (PlayerPrefs.GetInt("level" + beforeNum.ToString()) > 0)
+            {
+                isSelect = true;
+            }
         }
 
         if (isSelect) 
