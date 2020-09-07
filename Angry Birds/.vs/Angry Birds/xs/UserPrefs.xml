@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{6BE77C5F-732E-21CF-FE0F-871BCE23A44E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LevelSelect.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager.cs" Line="129" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="126" Column="47" />
       <File FileName="Assets/Scripts/Bird.cs" />
       <File FileName="Assets/Scripts/Pig.cs" />
       <File FileName="Assets/Scripts/PausePanel.cs" />
@@ -15,7 +15,7 @@
           <Node name="Angry Birds" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="LevelSelect.cs" selected="True" />
+                <Node name="GameManager.cs" selected="True" />
               </Node>
               <Node name="Trails FX" expanded="True" />
             </Node>
@@ -26,7 +26,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7640810e-0204-45a5-8821-443a2aade178" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6331a6f7-975a-41ce-be07-92a98206108c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
