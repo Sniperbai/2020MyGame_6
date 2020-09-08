@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MapSelect : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class MapSelect : MonoBehaviour
 
     public GameObject panel;
     public GameObject map;
+    public Text starstext;
+
+    public int startNum = 1;
+    public int endNum = 3;
 
     private void Start()
     {
@@ -26,6 +31,12 @@ public class MapSelect : MonoBehaviour
             stars.SetActive(true);
 
             //TODO text显示
+            int counts = 0;
+            for (int i = startNum; i <= endNum; i++)
+            {
+                counts += PlayerPrefs.GetInt("level" + i.ToString(), 0);
+            }
+            starstext.text = counts.ToString() + "/20";
         }
     }
 
@@ -36,5 +47,11 @@ public class MapSelect : MonoBehaviour
             panel.SetActive(true);
             map.SetActive(false);
         }
+    }
+
+    public void panelSelect()
+    {
+        panel.SetActive(false);
+        map.SetActive(true);
     }
 }
