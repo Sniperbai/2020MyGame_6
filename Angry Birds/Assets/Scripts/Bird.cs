@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Bird : MonoBehaviour
 {
@@ -19,14 +20,16 @@ public class Bird : MonoBehaviour
     public GameObject boom;
 
     //protected TestMyTrail myTrail;
-
-    private bool canMove = true;
+    [HideInInspector]
+    public bool canMove = false;
     public float smooth = 3;
 
     public AudioClip select;
     public AudioClip fly;
 
     public bool isFly = false;
+
+    public bool isReleased = false;
 
     public Sprite hurt;
     protected SpriteRenderer render;
@@ -68,6 +71,9 @@ public class Bird : MonoBehaviour
 
     private void Update()
     {
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
+
         if (isclick) { //鼠标一直按下，进行位置的跟随
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             //transform.position += new Vector3(0, 0, 10);
@@ -99,6 +105,7 @@ public class Bird : MonoBehaviour
 
     void Fly() 
     {
+        isReleased = true;
         isFly = true;
         AudioPlay(fly);
         sp.enabled = false;
